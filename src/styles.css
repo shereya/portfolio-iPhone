@@ -20,7 +20,10 @@ nav ul li{
     display: inline;
 }
 .left{
-    padding-right:8rem ;
+    padding-right:4.5rem ;
+}
+.middle{
+    padding-right:3rem
 }
 .right{
     padding: 0.4rem;
@@ -28,20 +31,21 @@ nav ul li{
 .name{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
-    padding-left:3.2rem;
+    padding-left:2rem;
     color: black;
     font-size:2rem;
     font-weight: 200;
     letter-spacing: 1px;
 }
-.about-nav,.photo-nav {
+.about-nav,.photo-nav,.skills-nav{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     font-weight: 300;
     letter-spacing: 1px;
     color: black;
+    padding: 0%;
 }
-.about-nav:hover,.photo-nav:hover{
+.about-nav:hover,.photo-nav:hover,.skills-nav:hover{
     letter-spacing: 0;
     font-size: 1.5rem;
     font-weight: 200;
@@ -69,9 +73,10 @@ img{
 footer{
     background-color:#DBDFEA ;
     display: flex;
-    height: 50px;
-    position: fixed;
+    height: 40px;
+    position:fixed;
     bottom:0;
+    left:0;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
@@ -109,7 +114,6 @@ footer a{
 .t-4:hover{
     font-size: 2.5rem;
 }
-
 .t-2{
     padding-top:4rem;
     padding-left: 18rem;
@@ -118,13 +122,27 @@ footer a{
     padding-top: 4rem;
     padding-left: 20rem;
 }
-@media only screen and (max-width: 390px){
-    img{
-        width:200px;
-        height: 200px;
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3)
+{
+    nav{
+        height:3.5rem;
+        background-color: #DBDFEA;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         position: fixed;
-        top:478px;
-        left:90px;
+        top:0;
+    }
+    nav ul{
+        list-style: none;
+        padding-right:4rem;
+    }
+    nav ul li{
+        display: inline;
     }
     .name{
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -134,51 +152,140 @@ footer a{
         font-weight: 200;
         letter-spacing: 1px;
         white-space: nowrap;
-        padding-left: 0.4rem;
-    } 
-    .about-nav,.photo-nav {
+        font-size: 15px;
+        position: relative;
+        right:20px;
+    }
+    .about-nav,.photo-nav,.skills-nav{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-decoration: none;
         font-weight: 300;
-        font-size: 0.7rem;
         letter-spacing: 1px;
         color: black;
         white-space: nowrap;
+        font-size: 11px;
     }
     .left{
-        padding-right:3rem ;
+        position: relative;
+        right:46px;
     }
-    .t-1,.t-2,.t-3,.t-4{
-        font-size:1.6rem;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 200;
-        padding-left: 3rem;
-        padding-top: 3rem;
-        transition-duration: 2s;
-        white-space: nowrap;
+    .middle{
+        position: relative;
+        right:103px;
     }
-    .t-2,.t-4{
-        display: flex;
-        justify-content: flex-end;
-        padding-right:30px;
+    .right{
+        position: relative;
+        right:145px;
     }
-    .t-1:hover,.t-3:hover,.t-2:hover,.t-4:hover{
-        font-size: 2.1rem;
-    }
-    .about-nav:hover,.photo-nav:hover{
+    .about-nav:hover,.photo-nav:hover,.skills-nav:hover{
         letter-spacing: 0;
-        font-size: 0.8rem;
+        font-size: 15px;
         font-weight: 200;
+    }
+    .name:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: grey;
+    }
+    .page-heading{
+        display: flex;
+        justify-content: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        padding-top:4rem;
+    }
+    img{
+        height:200px;
+        width:220px;
+        position:absolute;
+        right:90px;
+        top:390px;
     }
     footer{
-        height: 28px;
-        justify-content:center;
+        background-color:#DBDFEA ;
+        display: flex;
+        height: 25px;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
     }
     .left-foot-con{
-        font-size:0.5rem;
-        padding-top:3px;
+        padding-right:9.5rem;
     }
     .right-foot-con{
-        padding-top:6px;
+        padding-right: 4rem;
+    }
+    footer a{
+        font-size: 1.2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        color:black;
+    }
+    .t-1,.t-2,.t-3,.t-4{
+        font-size:1.9rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 200;
+        padding-left: 2rem;
+        animation-name: textzoominout;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        white-space: nowrap;
+    }
+    .t-1{
+        padding-left:5rem;
+        animation-name: textzoominout;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .t-3{
+        padding-top: 2.1rem;
+        padding-left: 3.2rem;
+        animation-name: textzoominout;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .t-2{
+        padding-top:2.1rem;
+        padding-left:2.9rem;
+        animation-name: textzoomoutin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .t-4{
+        padding-top: 2.1rem;
+        padding-left: 3.6rem;
+        animation-name: textzoomoutin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .t-1:hover,.t-2:hover,.t-3:hover,.t-4:hover{
+         font-size:1.9rem;
+    }
+    @keyframes textzoominout{
+        0%{
+            transform:scale(1,1);
+        }
+        50%{
+            transform: scale(1.1,1.1);
+        }
+        100%{
+            transform: scale(1,1);
+        }
+    }
+    @keyframes textzoomoutin {
+        0%{
+            transform:scale(1.1,1.1);
+        }
+        50%{
+            transform: scale(1,1);
+        }
+        100%{
+            transform: scale(1.1,1.1);
+        }
     }
 }
