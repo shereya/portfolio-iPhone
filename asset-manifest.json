@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-iPhone/static/css/main.a11387ae.css",
+    "main.js": "/portfolio-iPhone/static/js/main.a7d6bd25.js",
+    "static/media/img-2.jpg": "/portfolio-iPhone/static/media/img-2.440fe9ab3d17c87eefc1.jpg",
+    "static/media/pic-3.jpg": "/portfolio-iPhone/static/media/pic-3.d4314d875d0da0eadb62.jpg",
+    "static/media/img-1.jpg": "/portfolio-iPhone/static/media/img-1.27b8445c423f42b89d43.jpg",
+    "static/media/img-4.jpg": "/portfolio-iPhone/static/media/img-4.bcfb5961ba3bc5dafe5d.jpg",
+    "static/media/img-8.jpg": "/portfolio-iPhone/static/media/img-8.ea42329a159c9146c972.jpg",
+    "static/media/img-5.jpg": "/portfolio-iPhone/static/media/img-5.cf8603a70c2802017e1c.jpg",
+    "static/media/img-6.jpg": "/portfolio-iPhone/static/media/img-6.177fafcb8596754d8d32.jpg",
+    "static/media/Self.jpg": "/portfolio-iPhone/static/media/Self.9c8267f90cfd08e499cc.jpg",
+    "static/media/Computer.jpeg": "/portfolio-iPhone/static/media/Computer.8071bb4db935e5d397d5.jpeg",
+    "index.html": "/portfolio-iPhone/index.html",
+    "main.a11387ae.css.map": "/portfolio-iPhone/static/css/main.a11387ae.css.map",
+    "main.a7d6bd25.js.map": "/portfolio-iPhone/static/js/main.a7d6bd25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11387ae.css",
+    "static/js/main.a7d6bd25.js"
+  ]
+}
